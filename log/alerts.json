@@ -1,4 +1,14 @@
 {
-  "alerts": [],
-  "paper_book": []
+ "alerts": [
+  {
+   "id": 1,
+   "ts_utc": "2026-08-31T08:46:22+00:00",
+   "kind": "docket",
+   "ref": "2026-08-31",
+   "title": "Daily Docket",
+   "body_x": "DAILY DOCKET · 2026-08-31\n• 2026-09-17: SEC roundtable on preparations for 24-hour tradi\n• 2026-09-15: Senate procedural vote on CLARITY Act (mid-Sept \n• TBC: Comment deadline: SEC Regulation Crypto Assets (\nFull docket: link in bio. Not advice.",
+   "matched_slugs": ""
+  }
+ ],
+ "paper_book": []
 }
