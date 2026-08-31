@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The timestamped public alert record for RegOdds Desk, including simulated paper-book entries."
+    />
+    <meta name="theme-color" content="#08110f" />
+    <link rel="canonical" href="https://regodds.com/log/" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/log/log.css" />
+    <title>Public Log — RegOdds Desk</title>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="RegOdds Desk home">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span>RegOdds <strong>Desk</strong></span>
+        </a>
+        <div class="nav-links">
+          <a href="/seat/">Priority seat</a>
+          <span class="status"><span aria-hidden="true"></span> Public record</span>
+        </div>
+      </nav>
+
+      <header class="log-header">
+        <p class="eyebrow">Accountability layer</p>
+        <h1>Every published alert.<br />Timestamped.</h1>
+        <p class="lede">
+          This page records published alerts and simulated paper-book entries. Records are
+          informational, can be wrong or late, and are not trading instructions. Development
+          and synthetic test records are deliberately excluded.
+        </p>
+        <div class="log-meta" aria-live="polite">
+          <span id="record-count">Loading records…</span>
+          <span id="latest-record"></span>
+          <a href="/log/alerts.json">Download raw JSON</a>
+        </div>
+      </header>
+
+      <section aria-labelledby="alerts-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Published stream</p>
+            <h2 id="alerts-title">Alerts</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter alerts">
+            <button class="active" type="button" data-kind="all">All</button>
+            <button type="button" data-kind="docket">Dockets</button>
+            <button type="button" data-kind="move">Odds moves</button>
+            <button type="button" data-kind="news">News</button>
+          </div>
+        </div>
+        <div id="alert-list" class="alert-list">
+          <p class="empty-state">Loading the public record…</p>
+        </div>
+        <noscript><p class="empty-state">JavaScript is required for the visual log. The <a href="/log/alerts.json">raw JSON record</a> remains available.</p></noscript>
+      </section>
+
+      <section class="paper-section" aria-labelledby="paper-title">
+        <p class="eyebrow">Simulation only</p>
+        <h2 id="paper-title">Paper book</h2>
+        <p class="paper-intro">Paper entries use no real money and are never evidence of customer returns.</p>
+        <div id="paper-list" class="paper-list"><p class="empty-state">Loading…</p></div>
+      </section>
+
+      <section class="log-disclosure">
+        <strong>Interpret the record carefully.</strong>
+        <p>
+          Timestamps show when RegOdds stored an alert, not when an underlying event first
+          became public. Public APIs can be delayed or corrected. Absence from this log is not
+          evidence that no event occurred. Past calls and simulated outcomes do not predict future results.
+        </p>
+        <p>
+          The public production record starts when the isolated publisher first synchronizes
+          verified production output. An empty log means no production records have been
+          published here yet; it does not imply that no private alerts were sent.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 RegOdds Desk</span>
+      <span><a href="/">Home</a> · <a href="/seat/">Priority seat</a></span>
+    </footer>
+
+    <script src="/log/log.js" defer></script>
+  </body>
+</html>

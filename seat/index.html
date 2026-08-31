@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Purchase 30 days of RegOdds Priority Seat access with USDC on Polygon. Manual on-chain verification; no automatic renewal."
+    />
+    <meta name="theme-color" content="#08110f" />
+    <link rel="canonical" href="https://regodds.com/seat/" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/seat/seat.css" />
+    <title>Priority Seat — RegOdds Desk</title>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="RegOdds Desk home">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span>RegOdds <strong>Desk</strong></span>
+        </a>
+        <div class="nav-links">
+          <a href="/log/">Public log</a>
+          <span class="status"><span aria-hidden="true"></span> Manual verification</span>
+        </div>
+      </nav>
+
+      <header class="page-header">
+        <p class="eyebrow">Priority seat</p>
+        <h1>Faster signal.<br />Same public record.</h1>
+        <p class="lede">
+          Receive instant Telegram alerts, the Daily Docket, weekly reconciliation,
+          and the machine-readable archive. Information only—never trade execution or
+          personalized advice.
+        </p>
+      </header>
+
+      <section class="purchase-grid" aria-label="Purchase details">
+        <article class="purchase-card offer-card">
+          <p class="eyebrow">Founding offer</p>
+          <p class="price">$29 <span>USDC</span></p>
+          <p class="term">30 days of access · current founding price</p>
+          <ul class="feature-list">
+            <li>Instant alerts in the private Telegram channel</li>
+            <li>Daily 72-hour event-and-odds docket</li>
+            <li>Weekly wins-and-misses reconciliation</li>
+            <li>Public JSON archive of published alerts</li>
+          </ul>
+          <p class="renewal"><strong>No automatic renewal.</strong> Renew manually when the 30-day seat ends.</p>
+        </article>
+
+        <article class="purchase-card steps-card">
+          <p class="eyebrow">Buy safely</p>
+          <ol class="steps">
+            <li>
+              <span>1</span>
+              <div>
+                Message <a href="https://t.me/RegOddsDeskBot">@RegOddsDeskBot</a>, then send
+                <code>/buy</code> to receive your personal quote.
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>
+                Send the <strong>exact quoted amount</strong> in native USDC on
+                <strong>Polygon only</strong> to the address below.
+                <div class="address-row">
+                  <code id="payment-address">0x3eeb4ddbdcc2a6f2e5a5a219cc58c68ef7d19668</code>
+                  <button id="copy-address" type="button">Copy</button>
+                </div>
+                <p class="small">Do not use Base, Ethereum, another token, or an exchange withdrawal with an unknown network.</p>
+              </div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                Paste the public transaction hash into the bot. An administrator verifies
+                the network, official token contract, recipient, exact amount, confirmations,
+                and that the transaction has not been used before approving access.
+              </div>
+            </li>
+          </ol>
+          <a class="button primary full" href="https://t.me/RegOddsDeskBot">Open the purchase bot</a>
+          <p id="copy-status" class="small" role="status" aria-live="polite"></p>
+        </article>
+      </section>
+
+      <section class="risk-panel" aria-labelledby="before-paying">
+        <div>
+          <p class="eyebrow">Before paying</p>
+          <h2 id="before-paying">Manual payment, manual approval</h2>
+        </div>
+        <div>
+          <p>
+            Verification may take up to 12 hours. A submitted hash is not proof of payment and
+            does not create access until the on-chain checks pass. Never send a seed phrase,
+            private key, password, or exchange login—the bot only needs a public transaction hash.
+          </p>
+          <p>
+            First-seat refund requests made within seven days are handled manually in USDC.
+            Wrong-network or wrong-token transfers may be unrecoverable and are reviewed case by case.
+          </p>
+        </div>
+      </section>
+
+      <section class="legal-copy" aria-label="Risk disclosure">
+        <p>
+          RegOdds Desk is an information service. It does not execute trades, manage funds,
+          provide financial, investment, legal, or personalized trading advice, or promise profit.
+          Prediction markets are restricted in many jurisdictions; check your own eligibility and
+          local law. Public odds and source material may be delayed, incomplete, or wrong.
+          Any paper-book entry is simulated and uses no real money.
+        </p>
+        <p><a href="/log/">Review the public alert record before buying.</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 RegOdds Desk</span>
+      <span><a href="/">Home</a> · <a href="/log/">Public log</a></span>
+    </footer>
+
+    <script>
+      const button = document.getElementById("copy-address");
+      const address = document.getElementById("payment-address");
+      const status = document.getElementById("copy-status");
+
+      button.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(address.textContent.trim());
+          status.textContent = "Address copied. Verify the first and last characters in your wallet before sending.";
+        } catch {
+          status.textContent = "Copy was blocked by the browser. Select the address and copy it manually.";
+        }
+      });
+    </script>
+  </body>
+</html>
