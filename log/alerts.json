@@ -458,6 +458,15 @@
    "title": "Daily Docket",
    "body_x": "DAILY DOCKET · 2026-09-12\n• 2026-09-15: Senate procedural vote on CLARITY Act (mid-Sept \n• 2026-09-17: SEC roundtable: preparations for 24-hour equity \n• 2026-10-19: Comment deadline: Treasury GENIUS Act stablecoin\nFull docket: link in bio. Not advice.",
    "matched_slugs": ""
+  },
+  {
+   "id": 52,
+   "ts_utc": "2026-09-13T06:05:13+00:00",
+   "kind": "docket",
+   "ref": "2026-09-13-map",
+   "title": "CLARITY map: cloture vs signed-in-2026",
+   "body_x": "CLARITY map, Sep 13:\nSep 15 is a 60-vote cloture, not final passage.\n\"Signed in 2026\" is 22.5c (24h +6.0) on about $104K volume.\nThat 22.5c is this year becoming law, not Monday's procedural.\nIf cloture dies, the 2026 path mostly dies with it.\nNot advice. No execution.",
+   "matched_slugs": "clarity-act-signed-into-law-in-2026"
   }
  ],
  "paper_book": []
