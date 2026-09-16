@@ -638,6 +638,15 @@
    "title": "How many Senators will vote for the Clarity Act?",
    "body_x": "ODDS MOVE: How many Senators will vote for the Clarity Act?\nYES 15.0c → 9.5c (-5.5pts / 15min) | vol24h $44K | liq $22K\nNo attributed catalyst yet.\nWATCH: Cloture math; Democrat ethics-provision de\nNot advice. No execution.",
    "matched_slugs": "how-many-senators-will-vote-for-the-clarity-act-20260729193533306"
+  },
+  {
+   "id": 72,
+   "ts_utc": "2026-09-16T10:55:54+00:00",
+   "kind": "move",
+   "ref": "which-senators-will-vote-for-the-clarity-act-20260729190926658",
+   "title": "Which Senators will vote for the Clarity Act?",
+   "body_x": "ODDS MOVE: Which Senators will vote for the Clarity Act?\nYES 16.0c → 11.0c (-5.0pts / 15min) | vol24h $27K | liq $21K\nNo attributed catalyst yet.\nWATCH: Senate Banking Committee schedule and memb\nNot advice. No execution.",
+   "matched_slugs": "which-senators-will-vote-for-the-clarity-act-20260729190926658"
   }
  ],
  "paper_book": []
