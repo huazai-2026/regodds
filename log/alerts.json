@@ -881,6 +881,15 @@
    "title": "CFTC Seeks Public Comment on Notice of Proposed Rulemaking Concerning the Inclusion of Certain Event Contracts in the Definition of Swap",
    "body_x": "REG ALERT: CFTC Seeks Public Comment on Notice of Proposed Rulemaking Concerning th (CFTC)\nMKT: Which DCMs self-certify sports event contracts by De\nODDS: YES 100.0c (+1pts 24h) | vol $0 | liq $3K\nWATCH: CFTC filings; DCM product self-certificati\nNot advice. No execution.",
    "matched_slugs": "which-dcms-self-certify-sports-event-contracts-by-december-31-20260630144618248"
+  },
+  {
+   "id": 99,
+   "ts_utc": "2026-10-10T12:32:18+00:00",
+   "kind": "docket",
+   "ref": "2026-10-10",
+   "title": "Daily Docket",
+   "body_x": "DAILY DOCKET · 2026-10-10\n• 2026-10-19: Comment deadline: Treasury GENIUS Act stablecoin\n• 2026-10-20: Comment deadline: SEC Regulation Crypto Assets (\nFull docket: link in bio. Not advice.",
+   "matched_slugs": ""
   }
  ],
  "paper_book": []
